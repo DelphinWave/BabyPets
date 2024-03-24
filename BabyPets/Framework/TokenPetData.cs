@@ -10,10 +10,7 @@ namespace BabyPets.Framework
 {
     internal class TokenPetData
     {
-        // --DEBUG ONLY--
-
         public int adultAge;
-        // ------------
 
         public string token;
         public string isBaby = "false";
@@ -21,7 +18,6 @@ namespace BabyPets.Framework
         public int? bday;
         public string? petType;
         public string? petBreed;
-        //public int timesPet;
 
         /// <summary>
         /// Constructor for Token Pet Data framework
@@ -60,8 +56,8 @@ namespace BabyPets.Framework
 
         private bool IsBaby(int bday)
         {
-            ModEntry.SMonitor.Log($"IsBaby? {(SDate.Now().DaysSinceStart - bday) < adultAge}", LogLevel.Info);
-            ModEntry.SMonitor.Log($"Adult age: {adultAge}", LogLevel.Info);
+            //ModEntry.SMonitor.Log($"IsBaby? {(SDate.Now().DaysSinceStart - bday) < adultAge}", LogLevel.Info);
+            //ModEntry.SMonitor.Log($"Adult age: {adultAge}", LogLevel.Info);
             return (SDate.Now().DaysSinceStart - bday) < adultAge;
         }
     }

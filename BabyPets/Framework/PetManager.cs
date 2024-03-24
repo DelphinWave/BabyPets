@@ -49,9 +49,9 @@ namespace BabyPets.Framework
             var pets = GetAllPets();
             foreach (Pet pet in pets)
             {
-                ModEntry.SMonitor.Log($"{pet.Name}", LogLevel.Info);
-                ModEntry.SMonitor.Log($"DaysSinceStart {daysSinceStart}", LogLevel.Info);
-                ModEntry.SMonitor.Log($"TimesPet {pet.timesPet.Value}", LogLevel.Info);
+                //ModEntry.SMonitor.Log($"{pet.Name}", LogLevel.Info);
+                //ModEntry.SMonitor.Log($"DaysSinceStart {daysSinceStart}", LogLevel.Info);
+                //ModEntry.SMonitor.Log($"TimesPet {pet.timesPet.Value}", LogLevel.Info);
 
                 if (!pet.modData.ContainsKey(ModEntry.MOD_DATA_BDAY))
                 {
